@@ -53,15 +53,19 @@ console.log(ex8);
 // 9
 let calcul = (p,q,r) => {
     switch (q) {
-        case (q == "+"):
-            return `${p} + ${r}`;
-            break;
+        case ("+"):
+            return `${p} + ${r} = ${p + r}`;
+        case ("-"):
+            return `${p} - ${r} = ${p - r}`;   
+        case ("*"):
+            return `${p} * ${r} = ${p * r}`;
+        case ("/"):
+            return `${p} / ${r} = ${p / r}`;
     
         default:
             break;
-    }
-    
+    }  
 }
-
-let ex9 = calcul(5,q,7);
-console.log(ex9);
+let op = "+";
+let fin = calcul(5, op, 7)
+console.log(fin);
